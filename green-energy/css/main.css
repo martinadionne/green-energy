@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+<!-- font --> 
+
+/*-- MOBILE DEVICE - Content needs to be displayed in 1 column --*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 0.618rem;
+    line-height: 1.4;
+    background-color: #37A23B;
+    color: #0A1253;
+}
+
+.company-name{
+    background-color: #EAFAAE;
+}
+
+/*.nav-bar li a {
+    background-color:#EAFAAE;
+    margin-bottom: 10px; */
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Bree Serif', serif;
+    color: #0A1253;
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.content-box-1 {
+    width: 30%;
+    height: auto; 
+}
+    
+
+
+h1 {
+    line-height: 1.6;
+   
+}
+
+
+/* Add this class to any HTML element that needs clearing float */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*-- .content-box styles entire content --*/
+
+.content-box {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.wrapper {
+    max-width: 100rem;
+    margin: 1rem;
+}
+
+.logo {
+    color: #2D6686;
+    
+}
+
+.masthead-bg {
+  
+    background-position: 0 0;
+    color: #EAFAAE;
+}
+
+.masthead-bg h1 {
+    margin: 0;
+    padding: 2rem 0;
+    color: #0A1253;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.main-content-bg {
+    background-color: #FF6686;
+    color: #0A1253;
+    ;
+    padding: 1rem 0;
+}
+
+.main-content-bg h2 {
+    margin: 0 0 1rem 0;
+}
+
+
+/*-- NAVIGATION --*/
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #EAFAAE;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    display: block;
+    background-color: #EAFAAE;
+    color: #0A1253;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0 1px 0;
+    margin-bottom: 10px; 
+}
+
+.navbar li a:hover {
+    background-color: #EAFAAE;
+}
+
+.navbar li:last-child a {
+    margin: 0;
+}
+
+
+/*-- Styling footer --*/
+
+.footer-bg {
+    background-color: #EAFAAE;
+    color: #999;
+    padding: 1rem 0;
+}
+
+.footer-bg p {
+    margin: 0;
+}
+
+
+/* TABLET - Content needs to be displayed in 3 columns */
+
+@media screen and (min-width: 35rem) and (max-width: 80rem) {
+    .wrapper ul::after {
+        content: "";
+        display: block;
+        clear: left;
+    }
+    .navbar li a {
+        width: calc(20% - 5px);
+        float: left;
+        margin: 0 5px 0 0;
+    }
+    .store li {
+   
+        width: calc(33.33% - 1rem + 0.33rem);
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    /* Reference:
+       https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+    .wrapper ul li:nth-child(3n) {
+        margin: 0 0 1rem 0;
+    }
+    /* font-size has to be 1rem for this viewport*/
+    body {
+        font-size: 1rem;
+        background: #E81172;
+    }
+    
+}
+
+
+/* DESKTOP  */
+
+@media screen and (min-width: 80rem) {
+    /*
+  
+    .navbar li a {
+        width: calc(20% - 1px);
+        float: left;
+        margin: 0 1px 0 0;
+    }
+    .store li {
+        width: calc(25% - 0.75rem);
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    .store li:nth-child(4n) {
+        margin: 0 0 1rem 0;
+    }*/
+    body {
+        background: #EAFAAE;
+        font-size: 1.618rem;
+        color: #0A1253;
+    }
+ 
+    
+    
+}
